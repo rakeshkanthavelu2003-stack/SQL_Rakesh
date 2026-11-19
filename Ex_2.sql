@@ -95,3 +95,9 @@ add constraint FK_loans_customers
 foreign key (CustomerID)
 references customers(CustomerID);
 
+use banking_db;
+select * from customers;
+describe customers;
+
+alter table customers
+rename column LASTNAMEW to LastName;

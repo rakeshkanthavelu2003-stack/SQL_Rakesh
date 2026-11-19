@@ -37,3 +37,35 @@ alter table Students
 add constraint FK_Course_ID
 foreign key (Course_ID)
 references Courses(Course_ID);
+
+select * from accounts;
+select * from branches;
+
+use school;
+
+select * from courses;
+
+describe Students;
+
+insert into courses(Course_ID,Course_Name)
+values 
+	(101,"Maths"),
+    (102,"English"),
+    (103,"Language"),
+    (104,"Science"),
+    (105,"Social"),
+    (106,"GK");
+    
+insert into students
+values
+	(001,"Rakesh",101),
+    (002,"kaushik",102),
+    (003,"Ajay",102);
+    
+insert into students
+values
+	(004,"Sanjay",107);
+    
+    select * from Students;
+    select * from Students;
+    select * from Students;
